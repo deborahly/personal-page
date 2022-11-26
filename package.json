@@ -1,14 +1,16 @@
 {
   "name": "personal-deborah",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Deborah's personal website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:sass": "node-sass -r --output-style compressed sass/styles.scss -o css",
+    "watch:sass": "npm run build:sass && npm run build:sass -- -w",
+    "start": "parcel index.html"
   },
   "author": "Deborah Yscava",
-  "license": "ISC",
+  "license": "MIT License",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "parcel": "^2.8.0"
   }
 }
