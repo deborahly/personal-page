@@ -3,3 +3,26 @@
   padding: 25rem 5rem;
   margin-top: -20vh;
 }
+
+.section-features {
+  margin-top: -7rem;
+  padding: 20rem 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-1,
+    $color-primary-2,
+    $color-primary-3
+  );
+  background-size: cover;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-works {
+  background-color: $color-white;
+  padding: 25rem 5rem;
+  margin-top: -20vh;
+}
