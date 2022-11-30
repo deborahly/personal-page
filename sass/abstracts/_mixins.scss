@@ -41,3 +41,12 @@
     clear: both;
   }
 }
+
+// BOX SHADOW
+@mixin box-shadow-default {
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
+}
+
+@mixin box-shadow-custom($offset-x, $offset-y, $blur-radius, $opacity) {
+  box-shadow: $offset-x $offset-y $blur-radius rgba($color-black, $opacity);
+}
