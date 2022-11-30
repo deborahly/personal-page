@@ -356,13 +356,11 @@
           <div class="contact">
             <div class="contact__form">
               <div class="u-margin-bottom-small">
-                <h2 class="heading-secondary">
-                  Request a quotation now
-                </h2>
+                <h2 class="heading-secondary">Request a quotation now</h2>
               </div>
 
               <form action="#" class="form">
-                <div class="form__group">
+                <div class="form__group u-margin-bottom-small">
                   <input
                     type="text"
                     id="full-name"
@@ -370,10 +368,10 @@
                     placeholder="Full name"
                     required
                   />
-                  <laber for="full-name" class="form__label">Full name</laber>
+                  <label for="full-name" class="form__label">Full name</label>
                 </div>
 
-                <div class="form__group">
+                <div class="form__group u-margin-bottom-small">
                   <input
                     type="email"
                     id="email"
@@ -381,7 +379,54 @@
                     placeholder="Email"
                     required
                   />
-                  <laber for="email" class="form__label">Email</laber>
+                  <label for="email" class="form__label">Email</label>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      id="quotation"
+                      class="form__radio-input"
+                      name="radio"
+                    />
+                    <label for="quotation" class="form__radio-label">
+                      <span class="form__radio-btn"></span>
+
+                      Quotation
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      id="inquiry"
+                      class="form__radio-input"
+                      name="radio"
+                    />
+                    <label for="inquiry" class="form__radio-label">
+                      <span class="form__radio-btn"></span>
+
+                      Inquiry
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group--textarea">
+                  <textarea
+                    type="text"
+                    id="message"
+                    class="form__input form__textarea"
+                    placeholder="Message"
+                    maxlength="300"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <label for="message" class="form__label">Message</label>
+                </div>
+              
+                <div class="form__group--btn">
+                  <button class="btn btn--yellow">Send</button>
                 </div>
               </form>
             </div>
