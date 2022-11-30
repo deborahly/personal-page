@@ -5,9 +5,10 @@
   &__img {
     position: absolute;
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     transition: all 0.2s;
-    border-radius: 0.3rem;
+    border-radius: $border-radius-default;
+
+    @include box-shadow-default;
 
     @include respond(tab-port) {
       width: 35%;
@@ -32,8 +33,9 @@
       outline: 1rem solid $color-primary-1;
       outline-offset: 1rem;
       transform: scale(1.1) translateY(-0.5rem);
-      box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
       z-index: 1;
+
+      @include box-shadow-custom(0, 2rem, 5rem, 0.2);
     }
   }
 

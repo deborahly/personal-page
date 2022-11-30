@@ -11,10 +11,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    border-radius: 0.3rem;
+    border-radius: $border-radius-default;
     overflow: hidden;
     backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+    @include box-shadow-default;
 
     &--front {
       background-color: white;
@@ -79,7 +80,7 @@
 
   &__text {
     padding: 2rem 3rem;
-    font-size: 1.5rem;
+    font-size: $font-size-small;
 
     p {
       padding-top: 2rem;
@@ -101,7 +102,7 @@
 
       li {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: $font-size-small;
         padding: 1rem;
 
         &:not(:last-child) {
