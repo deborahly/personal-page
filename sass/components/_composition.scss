@@ -10,7 +10,7 @@
 
     @include box-shadow-default;
 
-    @include respond(tab-port) {
+    @include media-query(tab-port) {
       width: 35%;
     }
 
