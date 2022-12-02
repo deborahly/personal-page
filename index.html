@@ -17,41 +17,71 @@
     <title>Deborah Yscava | Web Developer</title>
   </head>
   <body>
-    <header></header>
-    <main>
-      <header class="header">
-        <!-- <div class="logo-box">
+    <header>
+      <!-- <div class="logo-box">
           <img src="img/logo-white.png" alt="Logo" class="logo" />
         </div> -->
 
+      <div class="navigation">
+        <input type="checkbox" id="nav-toggle" class="navigation__checkbox" />
+
+        <label for="nav-toggle" class="navigation__btn">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Services</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Portfolio</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Testimonials</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header">
         <div class="text-box">
           <h1 class="heading-primary">
-            <span class="heading-primary-main">Deborah Yscava</span>
-            <span class="heading-primary-sub">Web Developer</span>
+            <span class="heading-primary--main">Deborah Yscava</span>
+            <span class="heading-primary--sub">Web Developer</span>
           </h1>
 
           <a href="#" class="btn btn--white btn--animated">Contact me</a>
         </div>
-      </header>
-
+      </div>
+    </header>
+    <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">value yourself</h2>
-
-          <h2 class="heading-secondary">
-            your commitment, your hard work, your desire to thrive
-          </h2>
-
-          <h2 class="heading-tertiary">
-            by owning the market place you and your clients deserve, the
-            personal page that will mesmerize potential connections and future
-            employers, or even that app you have been architecturing in your
-            head for years
-          </h2>
+          <h2 class="heading-secondary">What I offer, with the utmost care</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Your special corner on the web
+            </h3>
+
+            <p class="paragraph">
+              You are only one step to own the market place you and your clients
+              deserve, or the personal page that will mesmerize potential
+              connections and future employers, or even that app you have been
+              architecturing in your mind for years
+            </p>
+
             <h3 class="heading-tertiary u-margin-bottom-small">
               Beautiful, user-friendly web applications
             </h3>
@@ -479,7 +509,7 @@
           </li>
 
           <li class="footer__list-item">
-            <a href="#" class="footer__link">Terms and conditions</a>
+            <a href="#popup" class="footer__link">Terms and conditions</a>
           </li>
         </ul>
       </div>
@@ -488,5 +518,19 @@
         <p>Copyright by &copy;Deborah Yscava.</p>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/img-1.jpg" alt="Image" class="popup__img" />
+          <img src="img/img-1.jpg" alt="Image" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#" class="popup__close">&times;</a>
+          <h2 class="heading-secondary">Any inquiries?</h2>
+          <p class="popup__text">TEXT</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
