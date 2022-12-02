@@ -7,7 +7,7 @@
 (1200 - 1800px: normal styles apply)
 */
 
-@mixin respond($breakpoint) {
+@mixin media-query($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
       @content;
@@ -49,4 +49,11 @@
 
 @mixin box-shadow-custom($offset-x, $offset-y, $blur-radius, $opacity) {
   box-shadow: $offset-x $offset-y $blur-radius rgba($color-black, $opacity);
+}
+
+// ADJUST POSITION
+@mixin absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
