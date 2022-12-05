@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
 
@@ -53,20 +59,32 @@
       </div>
 
       <div class="header">
-        <div class="text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary--main">Deborah Yscava</span>
-            <span class="heading-primary--sub">Web Developer</span>
-          </h1>
+        <div class="header__content">
+          <div class="header__img-group">
+            <img src="img/img-10.png" alt="Header image" class="header__img" />
+          </div>
 
-          <a href="#" class="btn btn--white btn--animated">Contact me</a>
+          <div class="header__text-group">
+            <div class="header__text">
+              <span class="heading-primary heading-primary--main">Deborah</span>
+
+              <span
+                class="heading-primary heading-primary--main u-margin-bottom-very-small"
+                >Yscava</span
+              >
+
+              <h3 class="heading-primary heading-primary--sub">
+                Web Developer
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">What I offer, with the utmost care</h2>
+          <h2 class="heading-secondary">What we can build together</h2>
         </div>
 
         <div class="row">
@@ -81,50 +99,45 @@
               connections and future employers, or even that app you have been
               architecturing in your mind for years
             </p>
-
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Beautiful, user-friendly web applications
-            </h3>
-
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              deserunt provident corrupti temporibus. In quam nisi provident
-              itaque repellat, voluptatibus nobis laboriosam alias tenetur,
-              quasi, explicabo nesciunt obcaecati quo illum.
-            </p>
-
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Safe environment for business owners and consumers
-            </h3>
-
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              deserunt provident corrupti temporibus. In quam nisi provident
-              itaque repellat, voluptatibus nobis laboriosam alias tenetur,
-              quasi, explicabo nesciunt obcaecati quo illum.
-            </p>
-
-            <a href="#" class="btn-text">Learn more &rarr;</a>
           </div>
 
           <div class="col-1-of-2">
-            <div class="composition">
+            <div class="group">
               <img
                 src="img/img-1.jpg"
                 alt="Project image 1"
-                class="composition__img composition__img--1"
-              /><img
-                src="img/img-1.jpg"
-                alt="Project image 2"
-                class="composition__img composition__img--2"
-              /><img
-                src="img/img-1.jpg"
-                alt="Project image 3"
-                class="composition__img composition__img--3"
+                class="about__img"
               />
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Beautiful, safe and easy-to-navigate web applications
+            </h3>
+
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              deserunt provident corrupti temporibus. In quam nisi provident
+              itaque repellat, voluptatibus nobis laboriosam alias tenetur,
+              quasi, explicabo nesciunt obcaecati quo illum.
+            </p>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="group">
+              <img
+                src="img/img-1.jpg"
+                alt="Project image 1"
+                class="about__img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-text">Learn more &rarr;</a>
       </section>
 
       <section class="section-features">
@@ -353,29 +366,6 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="review">
-            <figure class="review__shape">
-              <img src="img/img-2.jpg" alt="Person image" class="review__img" />
-            </figure>
-            <div class="review__text">
-              <h3 class="heading-tertiary u-margin-bottom-very-small">
-                Great post-delivery support
-              </h3>
-              <p class="review__text--body u-margin-bottom-very-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                deserunt provident corrupti temporibus. In quam nisi provident
-                itaque repellat, voluptatibus nobis laboriosam alias tenetur,
-                quasi, explicabo nesciunt obcaecati quo illum.
-              </p>
-              <p class="review__text--name">
-                &mdash;Mary Smith, Manager of
-                <span class="review__text--company">Like a Boss Glasses</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div class="u-center-text">
           <a href="#" class="btn-text">Read more reviews &rarr;</a>
         </div>
@@ -412,8 +402,8 @@
                   <label for="email" class="form__label">Email</label>
                 </div>
 
-                <div class="form__group">
-                  <div class="form__radio-group">
+                <div class="form__group form__group--radio">
+                  <div class="form__radio">
                     <input
                       type="radio"
                       id="quotation"
@@ -427,7 +417,7 @@
                     </label>
                   </div>
 
-                  <div class="form__radio-group">
+                  <div class="form__radio">
                     <input
                       type="radio"
                       id="inquiry"
@@ -456,38 +446,18 @@
                 </div>
 
                 <div class="form__group--btn">
-                  <button class="btn btn--yellow">Send</button>
+                  <button class="btn btn--yellow">Send message</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- <section class="grid-test">
-        <div class="row">
-          <div class="col-1-of-2">Col 1 of 2</div>
-
-          <div class="col-1-of-2">Col 1 of 2</div>
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-3">Col 1 of 3</div>
-
-          <div class="col-2-of-3">Col 2 of 3</div>
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-4">Col 1 of 4</div>
-
-          <div class="col-3-of-4">Col 3 of 4</div>
-        </div>
-      </section> -->
     </main>
 
     <footer class="footer">
       <!-- <div class="footer__logo-box">
-        <img src="" alt="Logo" class="footer__logo">
+        <img srcset="img/img-4-1x.png 1x, img/img-4-2x.png 2x" alt="Logo" class="footer__logo">
       </div> -->
 
       <div class="footer__navigation">
