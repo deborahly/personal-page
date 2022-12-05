@@ -2,26 +2,17 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include clearfix;
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
-
-  @include clearfix;
 
   [class^='col-'] {
     float: left;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
-
-      @include media-query(tab-port) {
-        margin-right: 0;
-        margin-bottom: $gutter-vertical;
-      }
-    }
-
-    @include media-query(tab-port) {
-      width: 100% !important;
     }
   }
 
@@ -53,5 +44,15 @@
     width: calc(
       3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal}
     );
+  }
+
+  @include media-query(tab-land) {
+    [class^='col-'] {
+      width: 100% !important;
+
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+      }
+    }
   }
 }

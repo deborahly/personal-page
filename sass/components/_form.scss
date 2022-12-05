@@ -2,6 +2,10 @@
   &__group {
     height: 5rem;
 
+    &--radio {
+      text-align: center;
+    }
+
     &--textarea {
       height: 100%;
     }
@@ -45,20 +49,21 @@
     margin-top: 0.2rem;
     font-size: $font-size-very-small;
     font-weight: 700;
-    color: $color-gray-dark;
+    color: $color-primary-3-dark;
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown + &__label {
+  &__input:placeholder-shown ~ &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
   }
 
-  &__radio-group {
+  &__radio {
     display: inline-block;
     width: 48%;
-    padding-left: 8rem;
+    // padding-left: 8rem;
+    margin: auto;
   }
 
   &__radio-input {

@@ -79,7 +79,7 @@
 
     &:hover,
     &:active {
-      color: $color-primary-4;
+      color: $color-primary-3;
       background-position: 100%;
       transform: translateX(1rem);
     }
@@ -106,7 +106,7 @@
       display: inline-block;
       width: 3rem;
       height: 2px;
-      background-color: $color-primary-4;
+      background-color: $color-primary-3;
     }
 
     &::before,

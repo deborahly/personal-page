@@ -8,6 +8,8 @@
 
 html {
   // Definition of 1rem
+  font-size: 68.75%; // 1rem = 11px
+
   @include media-query(big-desk) {
     font-size: 81.25%; // 1rem = 13px
   }
@@ -23,15 +25,13 @@ html {
   @include media-query(phone) {
     font-size: 50%; // 1rem = 8px
   }
-
-  font-size: 68.75%; // 1rem = 11px
 }
 
 body {
+  box-sizing: border-box;
+  padding: 3rem;
+
   @include media-query(tab-port) {
     padding: 0;
   }
-
-  box-sizing: border-box;
-  padding: 3rem;
 }

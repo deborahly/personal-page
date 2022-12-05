@@ -1,6 +1,6 @@
 .footer {
-  padding: 8rem 9rem 4rem 9rem;
-  background-color: $color-primary-4;
+  padding: 20rem 9rem 4rem 9rem;
+  background-color: $color-primary-3;
   font-size: 1rem;
 
   //   &__logo-box {
@@ -16,13 +16,12 @@
   &__navigation {
     margin: 5rem 0;
     text-align: center;
-
   }
 
   &__list {
     display: inline-block;
     padding: 0.5rem 1rem 0 1rem;
-    border-top: 1px solid $color-gray-light;
+    border-top: 1px solid $color-primary-3-light;
     list-style: none;
   }
 
@@ -45,7 +44,7 @@
     }
 
     &:hover {
-      background-color: $color-primary-4-light;
+      background-color: $color-primary-3-light;
       transform: translateY(-0.5rem);
 
       @include box-shadow-custom(0, 1rem, 2rem, 0.7);
