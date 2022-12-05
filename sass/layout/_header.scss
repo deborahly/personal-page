@@ -1,17 +1,44 @@
 .header {
+  position: relative;
   height: 95vh;
+  padding: 5rem;
   background-image: linear-gradient(
-    to right bottom,
+    to left ,
     $color-primary-1,
     $color-primary-2,
     $color-primary-3
   );
-  // url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__content {
+    display: table;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+  }
+
+  &__img-group {
+    display: table-cell;
+    padding-right: 5rem;
+    width: 33.333333%;
+    vertical-align: middle;
+  }
+
+  &__text-group {
+    display: table-cell;
+    width: 66.666667%;
+    vertical-align: middle;
+  }
+
+  &__img {
+    height: 25rem;
+    width: auto;
+  }
+
+  &__text {
+    text-align: left;
+  }
 }
 
 .logo-box {
@@ -22,11 +49,4 @@
 
 .logo {
   height: 3rem;
-}
-
-.text-box {
-  position: absolute;
-  text-align: center;
-
-  @include absolute-center;
 }
