@@ -30,12 +30,12 @@
 
     &:focus {
       outline: none;
-      border-bottom: 3px solid $color-primary-3;
+      border-bottom: 3px solid $color-primary-1;
       @include box-shadow-default;
     }
 
     &:focus:invalid {
-      border-bottom: 3px solid $color-primary-1;
+      border-bottom: 3px solid $color-primary-2-dark;
     }
   }
 
@@ -49,7 +49,7 @@
     margin-top: 0.2rem;
     font-size: $font-size-very-small;
     font-weight: 700;
-    color: $color-primary-3-dark;
+    color: $color-primary-3;
     transition: all 0.3s;
   }
 
@@ -62,7 +62,6 @@
   &__radio {
     display: inline-block;
     width: 48%;
-    // padding-left: 8rem;
     margin: auto;
   }
 

@@ -3,7 +3,7 @@
   margin: 0 auto;
   background-color: rgba(white, 0.8);
   border-radius: $border-radius-default;
-  padding: 5rem 7rem 5rem 7rem;
+  padding: 5rem 7rem;
 
   @include box-shadow-default;
 
@@ -12,7 +12,6 @@
     height: 15rem;
     float: left;
     clip-path: circle(50%);
-    background-color: orange;
     transform: translateX(-2rem);
   }
 
@@ -28,11 +27,32 @@
     &--name {
       font-size: 1rem;
       text-align: right;
-      padding-right: 2rem;
     }
 
     &--company {
       font-style: italic;
+    }
+  }
+
+  // MEDIA QUERIES
+  @include media-query(tab-port) {
+    position: relative;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    text-align: justify;
+
+    &__shape {
+      float: none;
+      margin: auto;
+      transform: translateX(0);
+    }
+
+    &__text {
+      padding-top: 2rem;
+
+      :first-child {
+        text-align: center;
+      }
     }
   }
 }
