@@ -24,9 +24,9 @@
   </head>
   <body>
     <header>
-      <!-- <div class="logo-box">
-          <img src="img/logo-white.png" alt="Logo" class="logo" />
-        </div> -->
+      <div class="logo-box">
+        <img src="img/logo.png" alt="Logo" class="logo" />
+      </div>
 
       <div class="navigation">
         <input type="checkbox" id="nav-toggle" class="navigation__checkbox" />
@@ -42,15 +42,19 @@
             <li class="navigation__list-item">
               <a href="#" class="navigation__link">About</a>
             </li>
+
             <li class="navigation__list-item">
               <a href="#" class="navigation__link">Services</a>
             </li>
+
             <li class="navigation__list-item">
               <a href="#" class="navigation__link">Portfolio</a>
             </li>
+
             <li class="navigation__list-item">
               <a href="#" class="navigation__link">Testimonials</a>
             </li>
+            
             <li class="navigation__list-item">
               <a href="#" class="navigation__link">Contact</a>
             </li>
@@ -81,6 +85,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
@@ -104,7 +109,7 @@
           <div class="col-1-of-2">
             <div class="group">
               <img
-                src="img/img-1.jpg"
+                src="img/img-1-2x.jpg"
                 alt="Project image 1"
                 class="about__img"
               />
@@ -129,7 +134,7 @@
           <div class="col-1-of-2">
             <div class="group">
               <img
-                src="img/img-1.jpg"
+                src="img/img-1-2x.jpg"
                 alt="Project image 1"
                 class="about__img"
               />
@@ -196,7 +201,7 @@
               <i class="icon-basic-heart feature-box__icon"></i>
 
               <h3 class="heading-tertiary u-margin-bottom-small">
-                From human to human
+                Consideration and respect
               </h3>
 
               <div class="feature-box__text">
@@ -223,12 +228,10 @@
                   <span class="card__heading-span">Planet Mate</span>
                 </h4>
 
-                <div class="card__text">
-                  <p>
-                    A website with tips on how to contribute to limiting climate
-                    change
-                  </p>
-                </div>
+                <p class="card__text">
+                  A website with tips on how to contribute to limiting climate
+                  change
+                </p>
               </div>
 
               <div class="card__side card__side--back">
@@ -239,8 +242,8 @@
                     <li>Newsletter</li>
                   </ul>
 
-                  <div class="card__btn">
-                    <a href="#" class="btn btn--white">Go to app</a>
+                  <div class="card__btn-group">
+                    <a href="#" class="btn btn--white card__btn">Go to app</a>
                   </div>
                 </div>
               </div>
@@ -256,12 +259,10 @@
                   <span class="card__heading-span">Movie Tour</span>
                 </h4>
 
-                <div class="card__text">
-                  <p>
-                    A movie guide for travelling through the TV screen and
-                    explore new cultures
-                  </p>
-                </div>
+                <p class="card__text">
+                  A movie guide for travelling through the TV screen and explore
+                  new cultures
+                </p>
               </div>
 
               <div class="card__side card__side--back">
@@ -272,8 +273,8 @@
                     <li>Personalized lists</li>
                   </ul>
 
-                  <div class="u-center-text">
-                    <a href="#" class="btn btn--white">Go to app</a>
+                  <div class="card__btn-group">
+                    <a href="#" class="btn btn--white card__btn">Go to app</a>
                   </div>
                 </div>
               </div>
@@ -289,12 +290,10 @@
                   <span class="card__heading-span">Brazuca</span>
                 </h4>
 
-                <div class="card__text">
-                  <p>
-                    An e-commerce for frozen and ready-to-eat brazilian dishes
-                    and pastries
-                  </p>
-                </div>
+                <p class="card__text">
+                  An e-commerce for frozen and ready-to-eat brazilian dishes and
+                  pastries
+                </p>
               </div>
 
               <div class="card__side card__side--back">
@@ -305,8 +304,8 @@
                     <li>Trustworthy payment</li>
                   </ul>
 
-                  <div class="card__btn">
-                    <a href="#" class="btn btn--white">Go to app</a>
+                  <div class="card__btn-group">
+                    <a href="#" class="btn btn--white card__btn">Go to app</a>
                   </div>
                 </div>
               </div>
@@ -376,11 +375,11 @@
           <div class="contact">
             <div class="contact__form">
               <div class="u-margin-bottom-small">
-                <h2 class="heading-secondary">Request a quotation now</h2>
+                <h2 class="heading-secondary">Get in touch now</h2>
               </div>
 
               <form action="#" class="form">
-                <div class="form__group u-margin-bottom-small">
+                <div class="form__group u-margin-bottom-default">
                   <input
                     type="text"
                     id="full-name"
@@ -391,7 +390,7 @@
                   <label for="full-name" class="form__label">Full name</label>
                 </div>
 
-                <div class="form__group u-margin-bottom-small">
+                <div class="form__group u-margin-bottom-default">
                   <input
                     type="email"
                     id="email"
@@ -402,7 +401,9 @@
                   <label for="email" class="form__label">Email</label>
                 </div>
 
-                <div class="form__group form__group--radio">
+                <div
+                  class="form__group form__group--radio u-margin-bottom-very-small"
+                >
                   <div class="form__radio">
                     <input
                       type="radio"
@@ -432,7 +433,7 @@
                   </div>
                 </div>
 
-                <div class="form__group--textarea">
+                <div class="form__group--textarea u-margin-bottom-small">
                   <textarea
                     type="text"
                     id="message"
@@ -446,7 +447,7 @@
                 </div>
 
                 <div class="form__group--btn">
-                  <button class="btn btn--yellow">Send message</button>
+                  <button class="btn btn--blue">Send message</button>
                 </div>
               </form>
             </div>
@@ -456,9 +457,9 @@
     </main>
 
     <footer class="footer">
-      <!-- <div class="footer__logo-box">
-        <img srcset="img/img-4-1x.png 1x, img/img-4-2x.png 2x" alt="Logo" class="footer__logo">
-      </div> -->
+      <div class="footer__logo-box">
+        <img src="img/logo.png" alt="Logo" class="footer__logo" />
+      </div>
 
       <div class="footer__navigation">
         <ul class="footer__list">
@@ -492,9 +493,10 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/img-1.jpg" alt="Image" class="popup__img" />
-          <img src="img/img-1.jpg" alt="Image" class="popup__img" />
+          <img src="img/img-1-2x.jpg" alt="Image" class="popup__img" />
+          <img src="img/img-1-2x.jpg" alt="Image" class="popup__img" />
         </div>
+
         <div class="popup__right">
           <a href="#" class="popup__close">&times;</a>
           <h2 class="heading-secondary">Any inquiries?</h2>

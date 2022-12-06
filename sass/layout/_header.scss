@@ -3,7 +3,7 @@
   height: 95vh;
   padding: 5rem;
   background-image: linear-gradient(
-    to left ,
+    to left,
     $color-primary-1,
     $color-primary-2,
     $color-primary-3
@@ -43,10 +43,12 @@
 
 .logo-box {
   position: absolute;
-  top: 4rem;
-  left: 4rem;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1;
 }
 
 .logo {
-  height: 3rem;
+  display: block;
+  height: 16rem;
 }
