@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,23 +36,23 @@
         <nav class="navigation__nav">
           <ul class="navigation__list">
             <li class="navigation__list-item">
-              <a href="#" class="navigation__link">About</a>
+              <a href="#section-about" class="navigation__link">About</a>
             </li>
 
             <li class="navigation__list-item">
-              <a href="#" class="navigation__link">Services</a>
+              <a href="#section-features" class="navigation__link">Services</a>
             </li>
 
             <li class="navigation__list-item">
-              <a href="#" class="navigation__link">Portfolio</a>
+              <a href="#section-works" class="navigation__link">Portfolio</a>
             </li>
 
             <li class="navigation__list-item">
-              <a href="#" class="navigation__link">Testimonials</a>
+              <a href="#section-technologies" class="navigation__link">Technologies</a>
             </li>
-            
+
             <li class="navigation__list-item">
-              <a href="#" class="navigation__link">Contact</a>
+              <a href="#section-contact" class="navigation__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +61,11 @@
       <div class="header">
         <div class="header__content">
           <div class="header__img-group">
-            <img src="img/img-10.png" alt="Header image" class="header__img" />
+            <img
+              src="img/img-deborah.png"
+              alt="Header image"
+              class="header__img"
+            />
           </div>
 
           <div class="header__text-group">
@@ -81,13 +81,45 @@
                 Web Developer
               </h3>
             </div>
+
+            <div class="header__social">
+              <a
+                href="https://www.upwork.com/freelancers/~0136d90fa2c9d6809e?viewMode=1"
+                target="_blank"
+                class="header__link"
+                ><img
+                  src="img/logo-upwork.png"
+                  alt="Upwork logo"
+                  class="header__icon"
+              /></a>
+
+              <a
+                href="https://www.linkedin.com/in/deborahyscava/"
+                target="_blank"
+                class="header__link"
+                ><img
+                  src="img/logo-linkedin.png"
+                  alt="LinkedIn logo"
+                  class="header__icon"
+              /></a>
+
+              <a
+                href="https://www.instagram.com/debs_lys/"
+                target="_blank"
+                class="header__link"
+                ><img
+                  src="img/logo-instagram.png"
+                  alt="Instagram logo"
+                  class="header__icon"
+              /></a>              
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <!-- <section class="section-services">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">What we can build together</h2>
         </div>
@@ -111,7 +143,7 @@
               <img
                 src="img/img-1-2x.jpg"
                 alt="Project image 1"
-                class="about__img"
+                class="services__img"
               />
             </div>
           </div>
@@ -136,22 +168,85 @@
               <img
                 src="img/img-1-2x.jpg"
                 alt="Project image 1"
-                class="about__img"
+                class="services__img"
               />
             </div>
           </div>
         </div>
 
         <a href="#" class="btn-text">Learn more &rarr;</a>
+      </section> -->
+
+      <section id="section-about" class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Hi! I'm Deborah</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I design and build web applications
+            </h3>
+
+            <p class="paragraph">
+              From the first idea, to the content, the visual design, the
+              application architecture, the coding, the testing and the
+              deployment, I make sure everything works perfect for my clients.
+            </p>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="group">
+              <img
+                srcset="
+                  img/img-computer-1x.jpg 1x,
+                  img/img-computer-2x.jpg 2x
+                "
+                alt="Project image 1"
+                class="about__img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I help maintain and update existing webpages
+            </h3>
+
+            <p class="paragraph">
+              Whether my clients need a new design, to add or remove content,
+              to correct a bug, or to make a major website update, I provide
+              them assistance in every step of the way.
+            </p>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="group">
+              <img
+                srcset="
+                  img/img-computer-1x.jpg 1x,
+                  img/img-computer-2x.jpg 2x
+                "
+                alt="Project image 1"
+                class="about__img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
       </section>
 
-      <section class="section-features">
+
+      <section id="section-features" class="section-features">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Why work with me</h2>
         </div>
 
         <div class="row">
-          <div class="col-1-of-4">
+          <div class="col-1-of-2">
             <div class="feature-box">
               <i class="icon-basic-display feature-box__icon"></i>
 
@@ -160,13 +255,14 @@
               </h3>
 
               <div class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                deserunt provident corrupti temporibus.
+                More and more people refer to the internet for information on...
+                anything really. Do not miss out the opportunity to show off
+                your ideas or your business to get the hype you deserve.
               </div>
             </div>
           </div>
 
-          <div class="col-1-of-4">
+          <div class="col-1-of-2">
             <div class="feature-box">
               <i class="icon-basic-world feature-box__icon"></i>
 
@@ -175,13 +271,16 @@
               </h3>
 
               <div class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                deserunt provident corrupti temporibus.
+                Even if you are already online and have you page up and running,
+                there is always a new feature around that might be just the
+                thing to help you saving time or reaching a target public.
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-1-of-4">
+        <div class="row">
+          <div class="col-1-of-2">
             <div class="feature-box">
               <i class="icon-basic-gear feature-box__icon"></i>
 
@@ -190,13 +289,14 @@
               </h3>
 
               <div class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                deserunt provident corrupti temporibus.
+                Undeniably and comprehensibly, we all want something unique that
+                captures our individuality or the vision and values of our
+                project or business.
               </div>
             </div>
           </div>
 
-          <div class="col-1-of-4">
+          <div class="col-1-of-2">
             <div class="feature-box">
               <i class="icon-basic-heart feature-box__icon"></i>
 
@@ -205,15 +305,16 @@
               </h3>
 
               <div class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                deserunt provident corrupti temporibus.
+                I believe we go further and collect more rewards along the way
+                when we build respectful, human connections, with transparency
+                and true desire to help one another.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-works">
+      <section id="section-works" class="section-works">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Previous works</h2>
         </div>
@@ -314,7 +415,7 @@
         </div>
       </section>
 
-      <section class="section-reviews">
+      <!-- <section class="section-reviews">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Check out what people have to say</h2>
         </div>
@@ -368,9 +469,49 @@
         <div class="u-center-text">
           <a href="#" class="btn-text">Read more reviews &rarr;</a>
         </div>
+      </section> -->
+
+      <section id="section-technologies" class="section-technologies">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Technologies and ressources I work with
+          </h2>
+        </div>
+
+        <div class="technologies__content">
+          <div class="row">
+            <div class="col-1-of-2">
+              <ul class="technologies__list">
+                <li class="technologies__list-item">HTML</li>
+                <li class="technologies__list-item">CSS</li>
+                <li class="technologies__list-item">Sass</li>
+                <li class="technologies__list-item">Bootstrap</li>
+                <li class="technologies__list-item">JavaScript</li>
+                <li class="technologies__list-item">Typescript</li>
+                <li class="technologies__list-item">React</li>
+                <li class="technologies__list-item">Redux</li>
+                <li class="technologies__list-item">Styled-components</li>
+              </ul>
+            </div>
+
+            <div class="col-1-of-2">
+              <ul class="technologies__list">
+                <li class="technologies__list-item">Firebase</li>
+                <li class="technologies__list-item">Stripe</li>
+                <li class="technologies__list-item">Gatsby</li>
+                <li class="technologies__list-item">Python</li>
+                <li class="technologies__list-item">Django</li>
+                <li class="technologies__list-item">Selenium Webdriver</li>
+                <li class="technologies__list-item">Netlify</li>
+                <li class="technologies__list-item">Git</li>
+                <li class="technologies__list-item">GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section-contact">
+      <section id="section-contact class="section-contact">
         <div class="row">
           <div class="contact">
             <div class="contact__form">
