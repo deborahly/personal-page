@@ -39,6 +39,64 @@
   &__text {
     text-align: left;
   }
+
+  &__social {
+    padding: 2rem 0;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__icon {
+    height: 2.5rem;
+    opacity: 0.8;
+    border-radius: 5px;
+    transition: all 0.2s;
+
+    @include box-shadow-custom(0, 0.5rem, 1.5rem, 0.6);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include media-query(phone) {
+    &__content {
+      position: absolute;
+      height: auto;
+      width: auto;
+      @include absolute-center;
+    }
+
+    &__img-group {
+      display: block;
+      width: auto;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    &__text-group {
+      display: block;
+      width: auto;
+    }
+
+    &__img {
+      display: inline-block;
+      height: 15rem;
+      width: auto;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__social {
+      text-align: center;
+    }
+  }
 }
 
 .logo-box {
@@ -51,4 +109,8 @@
 .logo {
   display: block;
   height: 16rem;
+
+  @include media-query(phone) {
+    height: 12rem;
+  }
 }

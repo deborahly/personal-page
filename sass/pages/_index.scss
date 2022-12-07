@@ -46,15 +46,72 @@
   background-color: white;
 }
 
-.section-reviews {
-  position: relative;
+// .section-reviews {
+//   position: relative;
+//   height: auto;
+//   padding: 15rem 5rem 20rem 5rem;
+//   background-image: linear-gradient(
+//     to right bottom,
+//     $color-primary-1-light,
+//     $color-primary-1
+//   );
+// }
+
+.section-technologies {
   height: auto;
   padding: 15rem 5rem 20rem 5rem;
   background-image: linear-gradient(
     to right bottom,
     $color-primary-1-light,
-    $color-primary-1
+    $color-primary-1,
+    $color-primary-4
   );
+}
+
+.technologies {
+  &__content {
+    position: relative;
+    min-height: 60vh;
+    width: auto;
+    margin: auto;
+  }
+
+  &__list {
+    // position: absolute;
+    list-style: none;
+    text-align: center;
+
+    // @include absolute-center;
+  }
+
+  &__list-item {
+    display: block;
+    padding: 0.5rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+    background-size: 230%;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &:hover {
+      color: $color-primary-3;
+      background-position: 100%;
+      transform: translateX(1rem);
+    }
+  }
 }
 
 .section-contact {
