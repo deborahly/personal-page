@@ -4,8 +4,10 @@
 
 // DOM elements
 const cardBtns = document.querySelectorAll('.card__btn');
-const navLinks = document.querySelectorAll('.navigation__link');
 const navCheckBox = document.querySelector('.navigation__checkbox');
+const navBackground = document.querySelector('navigation__background');
+const nav = document.querySelector('navigation__nav');
+const navLinks = document.querySelectorAll('.navigation__link');
 
 /////////////Runtime
 let mediaQueryTabLand = window.matchMedia('(max-width: 75em)');
@@ -14,9 +16,16 @@ let mediaQueryTabLand = window.matchMedia('(max-width: 75em)');
 //== When change to Tab Land
 mediaQueryTabLand.addEventListener('change', handleTabLandChange);
 
+//== When click on navigation checkbox
+navCheckBox.addEventListener('click', () => {
+  navCheckBox.toggleAttribute('checked');
+});
+
 //== When click on navigation link
 navLinks.forEach(element => {
-  element.addEventListener('click', handleNavLinkClick);
+  element.addEventListener('click', () => {
+    navCheckBox.toggleAttribute('checked');
+  });
 });
 
 // Initial check
@@ -39,9 +48,4 @@ function handleTabLandChange(mediaQuery) {
       element.classList.add('btn--blue');
     });
   }
-}
-
-function handleNavLinkClick() {
-  console.log('link clicked');
-  navCheckBox.checked = true;
 }
