@@ -14,6 +14,7 @@
     display: table;
     position: absolute;
     width: 70%;
+    padding: 2rem 3rem;
     background-color: white;
     color: $color-primary-3;
     border-radius: 0.3rem;
@@ -23,21 +24,9 @@
     @include box-shadow-default;
   }
 
-  &__left {
-    display: table-cell;
-    width: 33.333333%;
-  }
-
-  &__right {
-    display: table-cell;
-    width: 66.666667%;
-    padding: 2rem;
-    vertical-align: middle;
-  }
-
-  &__img {
-    display: block;
-    width: 100%;
+  &__text {
+    text-align: justify;
+    font-size: $font-size-very-small;
   }
 
   //OPEN-CLOSE LOGIC

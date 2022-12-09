@@ -87,11 +87,20 @@
   }
 
   //FUNCTIONALITY
-  &__checkbox:checked ~ &__background {
+  // &__checkbox:checked ~ &__background {
+  //   transform: scale(80);
+  // }
+
+  // &__checkbox:checked ~ &__nav {
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
+
+  input[checked] ~ &__background {
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav {
+  input[checked] ~ &__nav {
     opacity: 1;
     visibility: visible;
   }
@@ -135,16 +144,16 @@
     top: 1rem;
   }
 
-  &__checkbox:checked ~ &__btn &__icon {
+  input[checked] ~ &__btn &__icon {
     background-color: transparent;
   }
 
-  &__checkbox:checked ~ &__btn &__icon::before {
+  input[checked] ~ &__btn &__icon::before {
     top: 0;
     transform: rotate(-135deg);
   }
 
-  &__checkbox:checked ~ &__btn &__icon::after {
+  input[checked] ~ &__btn &__icon::after {
     top: 0;
     transform: rotate(135deg);
   }

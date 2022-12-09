@@ -1,6 +1,6 @@
 .form {
   &__group {
-    height: 5rem;
+    min-height: 3rem;
 
     &--radio {
       text-align: center;
@@ -102,5 +102,18 @@
 
   &__radio-input:checked ~ &__radio-label &__radio-btn::after {
     opacity: 1;
+  }
+
+  @include media-query(phone) {
+    &__group {
+      &--radio {
+        text-align: left;
+      }
+    }
+
+    &__radio {
+      display: block;
+      padding-bottom: 1rem;
+    }
   }
 }

@@ -1,11 +1,33 @@
+.logo-box {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.logo {
+  display: block;
+  height: 16rem;
+
+  @include media-query(phone) {
+    height: 12rem;
+  }
+}
+
 .header {
   position: relative;
   height: 95vh;
   padding: 5rem;
+  // background-image: linear-gradient(
+  //   to left,
+  //   $color-primary-1,
+  //   $color-primary-2,
+  //   $color-primary-3
+  // );
   background-image: linear-gradient(
     to left,
-    $color-primary-1,
-    $color-primary-2,
+    $color-primary-4,
+    white,
     $color-primary-3
   );
   background-size: cover;
@@ -23,6 +45,8 @@
     padding-right: 5rem;
     width: 33.333333%;
     vertical-align: middle;
+ 
+    filter: drop-shadow(0 1.5rem 2rem rgba($color-black, 0.6));
   }
 
   &__text-group {
@@ -34,6 +58,7 @@
   &__img {
     height: 25rem;
     width: auto;
+    clip-path: circle(12.5rem);
   }
 
   &__text {
@@ -68,6 +93,7 @@
       position: absolute;
       height: auto;
       width: auto;
+
       @include absolute-center;
     }
 
@@ -87,6 +113,7 @@
       display: inline-block;
       height: 15rem;
       width: auto;
+      clip-path: circle(7.5rem);
     }
 
     &__text {
@@ -96,21 +123,5 @@
     &__social {
       text-align: center;
     }
-  }
-}
-
-.logo-box {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  z-index: 1;
-}
-
-.logo {
-  display: block;
-  height: 16rem;
-
-  @include media-query(phone) {
-    height: 12rem;
   }
 }
