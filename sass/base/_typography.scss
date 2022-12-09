@@ -1,13 +1,14 @@
 body {
-  // font-family: 'Lato', sans-serif;
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
   line-height: 1.7;
 }
 
 .heading-primary {
-  color: $color-primary-3-light;
+  color: white;
   text-transform: uppercase;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
   &--main {
@@ -16,21 +17,22 @@ body {
     font-weight: 500;
     letter-spacing: 1.5rem;
     animation: moveInLeft 2s ease-out;
-
-    @include media-query(phone) {
-      font-size: 4rem;
-      letter-spacing: 1rem;
-    }
   }
 
   &--sub {
-    // display: block;
     font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: 1rem;
     animation: moveInRight 2s ease-out;
+  }
 
-    @include media-query(phone) {
+  @include media-query(phone) {
+    &--main {
+      font-size: 4rem;
+      letter-spacing: 1rem;
+    }
+
+    &--sub {
       font-size: 1rem;
       letter-spacing: 0.5rem;
     }
@@ -39,24 +41,25 @@ body {
 
 .heading-secondary {
   display: block;
+  color: $color-one-light;
   font-size: 3rem;
-  text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(
-    to bottom,
-    $color-primary-4,
-    $color-black
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.2s;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, $color-two, $color-black);
+  }
 }
 
 .heading-tertiary {
+  color: $color-two-dark;
   font-size: $font-size-default;
   font-weight: 800;
   text-transform: uppercase;
-  color: $color-primary-4-dark;
 }
 
 .paragraph {

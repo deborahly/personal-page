@@ -2,24 +2,24 @@
   &,
   &:link,
   &:visited {
-    @include media-query(tab-port) {
-      font-size: 1.2rem;
-    }
-
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem 3rem;
     display: inline-block;
-    border-radius: $border-radius-default;
-    transition: all 0.2s;
     position: relative;
+    padding: 1rem 3rem;
     font-size: 1.3rem;
     font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: $border-radius-default;
+    transition: all 0.2s ease-out;
 
     // For the <button> element:
     font-family: 'Inconsolata', monospace;
     border: none;
     cursor: pointer;
+
+    @include media-query(tab-port) {
+      font-size: 1.2rem;
+    }
   }
 
   &:hover,
@@ -27,36 +27,36 @@
     transform: translateY(-0.3rem);
     outline: none;
 
-    @include box-shadow-custom(0, 1rem, 2rem, 0.15);
+    @include box-shadow-hover;
   }
 
   &:active {
     transform: translateY(-0.1rem);
 
-    @include box-shadow-custom(0, 0.5rem, 1rem, 0.2);
+    @include box-shadow-active;
   }
 
   &::after {
     content: '';
     display: inline-block;
+    position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: $border-radius-default;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all 0.4s;
+    border-radius: $border-radius-default;
+    transition: all 0.4s ease-out;
   }
 
   &:hover::after {
-    transform: scaleX(1.3) scaleY(1.7);
     opacity: 0;
+    transform: scaleX(1.3) scaleY(1.7);
   }
 
   &--white {
     background-color: white;
-    color: $color-primary-3-dark;
+    color: $color-one-dark;
 
     &::after {
       background-color: white;
@@ -64,11 +64,11 @@
   }
 
   &--blue {
-    background-color: $color-primary-4;
+    background-color: $color-two;
     color: white;
 
     &::after {
-      background-color: $color-primary-4;
+      background-color: $color-two;
     }
   }
 

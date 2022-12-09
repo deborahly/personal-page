@@ -37,3 +37,8 @@ body {
     padding: 0;
   }
 }
+
+::selection {
+  color: white;
+  background-color: $color-two-light;
+}

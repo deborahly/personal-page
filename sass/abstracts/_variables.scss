@@ -1,23 +1,23 @@
 // COLORS
-$color-primary-1: #bdbbb0;
-$color-primary-1-light: #dad7cb;
-$color-primary-1-dark: #949289;
+$color-one: #353535;
+$color-one-very-light: #aaaaaa;
+$color-one-light: #6c6c6c;
+$color-one-dark: #212121;
 
-$color-primary-2: #d2d7df;
-$color-primary-2-light: #e5eaf2;
-$color-primary-2-dark: #a1a5ad;
+$color-two: #266dd3;
+$color-two-very-light: #a8cbfd;
+$color-two-light: #61a2fe;
+$color-two-dark: #1d56a6;
 
-$color-primary-3: #353535;
-$color-primary-3-very-light: #aaaaaa;
-$color-primary-3-light: #6c6c6c;
-$color-primary-3-dark: #212121;
+$color-three: #d2d7df;
+$color-three-light: #e5eaf2;
+$color-three-dark: #a1a5ad;
 
-$color-primary-4: #266DD3;
-$color-primary-4-very-light: #a8cbfd;
-$color-primary-4-light: #61a2fe;
-$color-primary-4-dark: #1d56a6;
+$color-four: #bdbbb0;
+$color-four-light: #dad7cb;
+$color-four-dark: #949289;
 
-$color-black: rgb(17, 16, 23);
+$color-black: rgb(17, 16, 24);
 
 // FONT
 $font-size-very-small: 1.4rem;
@@ -33,3 +33,4 @@ $gutter-horizontal: 6rem;
 // BORDER
 $border-radius-small: 2px;
 $border-radius-default: 3px;
+$border-radius-big: 5px;

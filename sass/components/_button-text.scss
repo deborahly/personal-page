@@ -2,25 +2,25 @@
   &:link,
   &:visited {
     display: inline-block;
-    font-size: $font-size-default;
-    color: $color-primary-3;
-    text-decoration: none;
-    border-bottom: 0.1rem solid $color-primary-3;
     padding: 0.3rem 0.8rem;
-    transition: all 0.2s;
+    color: $color-one;
+    font-size: $font-size-default;
+    text-decoration: none;
+    border-bottom: 0.1rem solid $color-one;
+    transition: all 0.2s ease-out;
   }
 
   &:hover {
     color: white;
-    background-color: $color-primary-3;
+    background-color: $color-one;
     transform: translateY(-0.3rem);
 
-    @include box-shadow-custom(0, 1rem, 2rem, 0.15);
+    @include box-shadow-hover;
   }
 
   &:active {
     transform: translateY(0);
 
-    @include box-shadow-custom(0, 0.5rem, 1rem, 0.2);
+    @include box-shadow-active;
   }
 }

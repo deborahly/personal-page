@@ -10,16 +10,21 @@
   &__icon {
     display: inline-block;
     padding: 0.5rem;
+    color: $color-two-dark;
     font-size: 6rem;
     line-height: 1.5;
-    color: transparent;
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary-4,
-      $color-primary-4-dark,
-      $color-black
-    );
-    -webkit-background-clip: text;
+
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-two,
+        $color-two-dark,
+        $color-black
+      );
+    }
   }
 
   &__text {

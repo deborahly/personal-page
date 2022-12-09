@@ -1,8 +1,8 @@
 .section-about {
-  background-color: white;
   position: relative;
   height: auto;
   padding: 15rem 7rem 20rem 7rem;
+  background-color: white;
 
   @include media-query(tab-port) {
     padding: 10rem 5rem 15rem 5rem;
@@ -11,30 +11,31 @@
 
 .about {
   padding: 3rem 4rem;
-  background-color: $color-primary-2-light;
-  
+  background-color: $color-three-light;
+
   &__text {
-    text-align: justify;
     font-size: $font-size-default;
+    text-align: justify;
   }
 
   &__img-group {
     text-align: right;
+    overflow: hidden;
   }
 
   &__img {
     display: inline-block;
-    width: auto;
     height: 18rem;
-    transition: all 0.2s;
+    width: auto;
     border-radius: $border-radius-default;
+    transition: all 0.2s;
 
     @include box-shadow-default;
 
     &:hover {
       transform: scale(1.1);
 
-      @include box-shadow-custom(0, 2rem, 5rem, 0.2);
+      @include box-shadow-hover;
     }
   }
 
@@ -51,13 +52,13 @@
   padding: 15rem 5rem 20rem 5rem;
   background-image: linear-gradient(
     to left bottom,
-    $color-primary-1,
-    $color-primary-2,
-    $color-primary-3
+    $color-four,
+    $color-three,
+    $color-one
   );
 
   @include media-query(tab-port) {
-    padding: 10rem 1rem 15rem 1rem;
+    padding: 10rem 2rem 15rem 2rem;
   }
 }
 
@@ -68,7 +69,7 @@
   background-color: white;
 
   @include media-query(tab-port) {
-    padding: 10rem 1rem 15rem 1rem;
+    padding: 10rem 2rem 15rem 2rem;
   }
 }
 
@@ -77,13 +78,13 @@
   padding: 15rem 5rem 20rem 5rem;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary-1-light,
-    $color-primary-1,
-    $color-primary-4
+    $color-four-light,
+    $color-four,
+    $color-two
   );
 
   @include media-query(tab-port) {
-    padding: 10rem 1rem 15rem 1rem;
+    padding: 10rem 2rem 15rem 2rem;
   }
 }
 
@@ -94,35 +95,31 @@
     width: 80%;
     margin: auto;
 
-    &--left {
+    [class*='content--'] {
       display: table-cell;
-      padding-right: 5rem;
       width: 50%;
       vertical-align: top;
     }
 
-    &--right {
-      display: table-cell;
-      width: 50%;
-      vertical-align: top;
+    &--left {
+      padding-right: 5rem;
     }
   }
 
   &__list {
-    list-style: none;
     text-align: center;
+    list-style: none;
   }
 
   &__list-item {
     display: block;
     padding: 0.5rem 2rem;
+    color: white;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 0.3rem;
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
-    
   }
 
   @include media-query(phone) {
@@ -132,15 +129,13 @@
       width: 80%;
       margin: auto;
 
-      &--left {
+      [class*='content--'] {
         display: block;
         width: 100%;
-        padding-right: 0;
       }
 
-      &--right {
-        display: block;
-        width: 100%;
+      &--left {
+        padding-right: 0;
       }
     }
   }
@@ -152,8 +147,8 @@
   padding: 15rem 7rem 20rem 7rem;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary-2-light,
-    $color-primary-2
+    $color-three-light,
+    $color-three
   );
 
   @include media-query(tab-port) {
@@ -168,7 +163,7 @@
       rgba(white, 0.7) 50%,
       transparent 50%
     ),
-    url(../img/img-3.jpg);
+    url(../img/img-contact-2x.jpg);
   background-size: cover;
   border-radius: $border-radius-default;
 
@@ -187,7 +182,7 @@
         rgba(white, 0.9) 70%,
         transparent 70%
       ),
-      url(../img/img-3.jpg);
+      url(../img/img-contact-1x.jpg);
 
     &__form {
       width: 70%;
@@ -200,7 +195,7 @@
         rgba(white, 0.9),
         rgba(white, 0.3)
       ),
-      url(../img/img-3.jpg);
+      url(../img/img-contact-1x.jpg);
 
     &__form {
       width: 100%;

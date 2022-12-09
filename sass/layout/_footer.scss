@@ -1,17 +1,16 @@
 .footer {
   padding: 6rem 9rem 4rem 9rem;
-  background-color: $color-primary-3;
-  font-size: 1rem;
+  background-color: $color-one;
+  font-size: 1.2rem;
 
-    &__logo-box {
-      text-align: center;
+  &__logo-box {
+    text-align: center;
+  }
 
-    }
-
-    &__logo {
-      height: 16rem;
-      width: auto;
-    }
+  &__logo {
+    height: 15rem;
+    width: auto;
+  }
 
   &__navigation {
     margin: 5rem 0;
@@ -21,7 +20,7 @@
   &__list {
     display: block;
     padding: 1rem 1rem 0 1rem;
-    border-top: 1px solid $color-primary-3-light;
+    border-top: 1px solid $color-one-light;
     list-style: none;
   }
 
@@ -36,22 +35,22 @@
   &__link {
     &:link,
     &:visited {
-      padding: 0.5rem;
       display: inline-block;
+      padding: 0.5rem;
       color: white;
       text-decoration: none;
       text-transform: uppercase;
     }
 
     &:hover {
-      background-color: $color-primary-3-light;
+      background-color: $color-one-light;
       transform: translateY(-0.2rem);
 
-      @include box-shadow-custom(0, 1rem, 2rem, 0.3);
+      @include box-shadow-hover;
     }
 
     &:active {
-      @include box-shadow-custom(0, 0.5rem, 1rem, 0.5);
+      @include box-shadow-active;
     }
   }
 

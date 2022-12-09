@@ -5,14 +5,14 @@
 
   &__btn {
     position: fixed;
-    top: 5rem;
-    right: 5rem;
     height: 6rem;
     width: 6rem;
+    top: 5rem;
+    right: 5rem;
+    z-index: 300;
     text-align: center;
     background-color: white;
     border-radius: 50%;
-    z-index: 300;
     cursor: pointer;
 
     @include box-shadow-default;
@@ -20,24 +20,24 @@
 
   &__background {
     position: fixed;
-    top: 5.5rem;
-    right: 5.5rem;
     height: 5rem;
     width: 5rem;
+    top: 5.5rem;
+    right: 5.5rem;
+    z-index: 100;
     background-image: radial-gradient(
-      $color-primary-1-light,
-      $color-primary-4,
-      $color-primary-4-dark
+      $color-four-light,
+      $color-two,
+      $color-two-dark
     );
     border-radius: 50%;
-    z-index: 100;
     transition: transform 0.5s cubic-bezier(0.83, 0, 0.17, 1);
   }
 
   &__nav {
     position: fixed;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
     height: 100vh;
     width: 100%;
     top: 0;
@@ -48,8 +48,8 @@
 
   &__list {
     position: absolute;
-    list-style: none;
     text-align: center;
+    list-style: none;
 
     @include absolute-center;
   }
@@ -63,10 +63,10 @@
     &:visited {
       display: inline-block;
       padding: 0.5rem 2rem;
+      color: white;
       font-size: 2.5rem;
       font-weight: 700;
       letter-spacing: 0.3rem;
-      color: white;
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(
@@ -76,33 +76,23 @@
         white 50%
       );
       background-size: 230%;
-      transition: all 0.3s;
+      transition: all 0.3s ease-out;
     }
 
     &:hover,
     &:active {
-      color: $color-primary-3;
+      color: $color-one;
       background-position: 100%;
     }
   }
-
-  //FUNCTIONALITY
-  // &__checkbox:checked ~ &__background {
-  //   transform: scale(80);
-  // }
-
-  // &__checkbox:checked ~ &__nav {
-  //   opacity: 1;
-  //   visibility: visible;
-  // }
 
   input[checked] ~ &__background {
     transform: scale(80);
   }
 
   input[checked] ~ &__nav {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
 
   //ICON
@@ -114,9 +104,9 @@
     &::before,
     &::after {
       display: inline-block;
-      width: 3rem;
       height: 2px;
-      background-color: $color-primary-3;
+      width: 3rem;
+      background-color: $color-one;
     }
 
     &::before,
@@ -124,7 +114,7 @@
       content: '';
       position: absolute;
       left: 0;
-      transition: all 0.2s;
+      transition: all 0.2s ease-out;
     }
 
     &::before {
